@@ -22,17 +22,17 @@ Since the api works in heavy-load context, several techniques were put in place 
 - Avoiding N+1 problem: This was avoided by using Redis batching which allowed a group of queries to done sent in one go instead of sending each one indivisually to redis.
 
   In order to run the app, you must have Laravel and Composer installed on your computer. I will assume that it's installed.
-  1- Go to to the project folder in CMD
-  2- Type: composer install
+  - Go to to the project folder in CMD
+  - Type: composer install
   it will download and install all of the project dependancies
-  3- Create a database in MySQL called "sales"
-  4- Download Redis and then run it. It needs to be running for the application to function.
-  5- Go back to CMD and type: php artisan migrate --seed
+  - Create a database in MySQL called "sales"
+  - Download Redis and then run it. It needs to be running for the application to function.
+  - Go back to CMD and type: php artisan migrate --seed
   This will run the migrations and seeding which will create data schemas along with their inital values
-  6- At this point you can run the application and try testing it (running its tests). You can do that by writing this in the CMD prompt:
+  - At this point you can run the application and try testing it (running its tests). You can do that by writing this in the CMD prompt:
   For running the application -> php artisan serve
   For running the application tests -> php artisan test
-  7- If you want to run the application scheduler which checks for holds that expired periodically, you will find a bash file called "scheduler.bash". Open that file using Git Bash on Windows or using Linux. It should look like this:
+  - If you want to run the application scheduler which checks for holds that expired periodically, you will find a bash file called "scheduler.bash". Open that file using Git Bash on Windows or using Linux. It should look like this:
   
 <img width="745" height="449" alt="2025-12-02_211922" src="https://github.com/user-attachments/assets/961fa243-3ec4-40cb-843c-6e1e72fddaf6" />
 
