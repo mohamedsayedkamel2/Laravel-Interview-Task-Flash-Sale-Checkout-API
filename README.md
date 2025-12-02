@@ -21,7 +21,7 @@ Since the api works in heavy-load context, several techniques were put in place 
 - Transactions and locking: Used mulithreading tools such as locking and transactions to ensure that concurrent requests don't corrupt the data or lead to incorrect results or behaviour like overselling
 - Avoiding N+1 problem: This was avoided by using Redis batching which allowed a group of queries to done sent in one go instead of sending each one indivisually to redis.
 
-  In order to run the app, you must have Laravel and Composer installed on your computer. I will assume that it's installed.
+In order to run the app, you must have Laravel and Composer installed on your computer. I will assume that it's installed.
   - Go to to the project folder in CMD
   - Type: composer install
   it will download and install all of the project dependancies
