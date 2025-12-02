@@ -2,10 +2,10 @@
 This is an API which introduces a couple of functionalities such as: Quering a product, holding a certain amount of product, doing an order, and so on.
 
 A better way of showing what it does as well is to show it's endpoints which we as interact with as both users and developers:
-1- GET: /api/products/{product_id} : This returns the details of a specific product
-2- POST: /api/holds : This holds a certain amount of product for a period of 2 minutes. If two minutes are passed without a successfuly payment operation, the hold gets expired and removed automatically and the held amounts of the product gets returned to the stock for other users.
-3- POST: /api/orders: Issues an order using a valid hold_id
-4- POST: /api/payments/webhook: Takes the order_id, idempotency_id, and payment process result from a supossed payment service which is used to verify that an order has been issued successfuly.
+- 1- GET: /api/products/{product_id} : This returns the details of a specific product
+- 2- POST: /api/holds : This holds a certain amount of product for a period of 2 minutes. If two minutes are passed without a successfuly payment operation, the hold gets expired and removed automatically and the held amounts of the product gets returned to the stock for other users.
+- 3- POST: /api/orders: Issues an order using a valid hold_id
+- 4- POST: /api/payments/webhook: Takes the order_id, idempotency_id, and payment process result from a supossed payment service which is used to verify that an order has been issued successfuly.
 
 This application was built using tools and technologies which includes the following:
 - PHP
